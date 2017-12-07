@@ -1,0 +1,1044 @@
+@charset "UTF-8";
+/* // задать все переменные
+ */
+/* // как использовать */
+/* p {
+  @include trans;
+ } */
+/* // как использовать */
+/* p {
+  @include font-size(20px);
+ } */
+/*
+как перевести размеры контейнеров из пикселей
+в rem */
+/* .divigin {
+  width: pxrem(30px);
+} */
+/* как использовать
+.nameclass {
+ @include triangle(25px, up, red);
+  @include triangle(25px, down, red);
+   @include triangle(100px, left, red);
+    @include triangle(100px, right, red);
+}
+ */
+/* как использовать
+.nameclass {
+ @include trianglelong(25px,40px, up, red);
+ @include trianglelong(25px,40px, down, red);
+ @include trianglelong(25px,40px, left, red);
+ @include trianglelong(25px,40px, right, red);
+
+}
+ */
+/* как создать треугольник легкий способ */
+/* как использовать
+.nameclass {
+ @include trianglelight(25px, 25px, up, 50px, 50px, #0489B1);
+@include trianglelight(25px, 25px, dawn, 50px, 50px, #0489B1);
+@include trianglelight(25px, 25px, left, 50px, 50px, #0489B1);
+@include trianglelight(25px, 25px, right, 50px, 50px, #0489B1);
+
+ */
+/* как использовать
+.nameclass {
+ @include triangle_in_corner(25px, topleft, red);
+    @include triangle_in_corner(100px, topright, red);
+
+ @include triangle_in_corner(25px, bottomleft, red);
+  @include triangle_in_corner(25px, bottomright, red);
+
+}
+ */
+/*все переменные и моды */
+/*  width: $block_width - ( 5px * 2 ) - ( 1px * 2 ); */
+/* как сделать миксинг */
+/*  @mixin large-text {
+   font: {
+     family: Arial;
+     size: 20px;
+    weight: bold;
+   }
+  color: #ff0000;
+ } */
+/* как использовать миксинг */
+/*  .page-title {
+  @include large-text;
+  padding: 4px;
+  margin-top: 10px;
+ } */
+*::-webkit-input-placeholder {
+  color: #000000;
+  opacity: 1; }
+
+*:-moz-placeholder {
+  color: #000000;
+  opacity: 1; }
+
+*::-moz-placeholder {
+  color: #000000;
+  opacity: 1; }
+
+*:-ms-input-placeholder {
+  color: #000000;
+  opacity: 1; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  padding: 0;
+  margin: 0; }
+
+html {
+  width: 100%;
+  /* height: 100%; */
+  font-size: 16px;
+  line-height: 1.625;
+  margin: 0;
+  padding: 0;
+  -webkit-backface-visibility: hidden;
+  overflow-x: hidden; }
+
+body {
+  font-family: "MyriadProRegular", sans-serif;
+  font-size: 16px;
+  line-height: 1.625;
+  position: relative;
+  min-width: 320px;
+  height: 100%;
+  color: #000000;
+  opacity: 1;
+  -webkit-backface-visibility: hidden;
+  -webkit-font-smoothing: antialised;
+  overflow-x: hidden; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+a {
+  outline: 0;
+  text-decoration: none; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style-type: none; }
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+.hidden {
+  display: none; }
+
+/* // задать все переменные
+ */
+/* // как использовать */
+/* p {
+  @include trans;
+ } */
+/* // как использовать */
+/* p {
+  @include font-size(20px);
+ } */
+/*
+как перевести размеры контейнеров из пикселей
+в rem */
+/* .divigin {
+  width: pxrem(30px);
+} */
+/* как использовать
+.nameclass {
+ @include triangle(25px, up, red);
+  @include triangle(25px, down, red);
+   @include triangle(100px, left, red);
+    @include triangle(100px, right, red);
+}
+ */
+/* как использовать
+.nameclass {
+ @include trianglelong(25px,40px, up, red);
+ @include trianglelong(25px,40px, down, red);
+ @include trianglelong(25px,40px, left, red);
+ @include trianglelong(25px,40px, right, red);
+
+}
+ */
+/* как создать треугольник легкий способ */
+/* как использовать
+.nameclass {
+ @include trianglelight(25px, 25px, up, 50px, 50px, #0489B1);
+@include trianglelight(25px, 25px, dawn, 50px, 50px, #0489B1);
+@include trianglelight(25px, 25px, left, 50px, 50px, #0489B1);
+@include trianglelight(25px, 25px, right, 50px, 50px, #0489B1);
+
+ */
+/* как использовать
+.nameclass {
+ @include triangle_in_corner(25px, topleft, red);
+    @include triangle_in_corner(100px, topright, red);
+
+ @include triangle_in_corner(25px, bottomleft, red);
+  @include triangle_in_corner(25px, bottomright, red);
+
+}
+ */
+/*все переменные и моды */
+/*  width: $block_width - ( 5px * 2 ) - ( 1px * 2 ); */
+/* как сделать миксинг */
+/*  @mixin large-text {
+   font: {
+     family: Arial;
+     size: 20px;
+    weight: bold;
+   }
+  color: #ff0000;
+ } */
+/* как использовать миксинг */
+/*  .page-title {
+  @include large-text;
+  padding: 4px;
+  margin-top: 10px;
+ } */
+/* font-family: "Pacifico"; */
+@font-face {
+  font-family: "Pacifico";
+  src: url("../fonts/Pacifico/Pacifico.eot?#iefix") format("embedded-opentype"), url("../fonts/Pacifico/Pacifico.woff") format("woff"), url("../fonts/Pacifico/Pacifico.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "MyriadProRegular";
+  src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"), url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "MyriadProSemiBold";
+  src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProSemiBold/MyriadProSemiBold.woff") format("woff"), url("../fonts/MyriadProSemiBold/MyriadProSemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "MyriadProBold";
+  src: url("../fonts/MyriadProBold/MyriadProBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProBold/MyriadProBold.woff") format("woff"), url("../fonts/MyriadProBold/MyriadProBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* // задать все переменные
+ */
+/* // как использовать */
+/* p {
+  @include trans;
+ } */
+/* // как использовать */
+/* p {
+  @include font-size(20px);
+ } */
+/*
+как перевести размеры контейнеров из пикселей
+в rem */
+/* .divigin {
+  width: pxrem(30px);
+} */
+/* как использовать
+.nameclass {
+ @include triangle(25px, up, red);
+  @include triangle(25px, down, red);
+   @include triangle(100px, left, red);
+    @include triangle(100px, right, red);
+}
+ */
+/* как использовать
+.nameclass {
+ @include trianglelong(25px,40px, up, red);
+ @include trianglelong(25px,40px, down, red);
+ @include trianglelong(25px,40px, left, red);
+ @include trianglelong(25px,40px, right, red);
+
+}
+ */
+/* как создать треугольник легкий способ */
+/* как использовать
+.nameclass {
+ @include trianglelight(25px, 25px, up, 50px, 50px, #0489B1);
+@include trianglelight(25px, 25px, dawn, 50px, 50px, #0489B1);
+@include trianglelight(25px, 25px, left, 50px, 50px, #0489B1);
+@include trianglelight(25px, 25px, right, 50px, 50px, #0489B1);
+
+ */
+/* как использовать
+.nameclass {
+ @include triangle_in_corner(25px, topleft, red);
+    @include triangle_in_corner(100px, topright, red);
+
+ @include triangle_in_corner(25px, bottomleft, red);
+  @include triangle_in_corner(25px, bottomright, red);
+
+}
+ */
+/*все переменные и моды */
+/*  width: $block_width - ( 5px * 2 ) - ( 1px * 2 ); */
+/* как сделать миксинг */
+/*  @mixin large-text {
+   font: {
+     family: Arial;
+     size: 20px;
+    weight: bold;
+   }
+  color: #ff0000;
+ } */
+/* как использовать миксинг */
+/*  .page-title {
+  @include large-text;
+  padding: 4px;
+  margin-top: 10px;
+ } */
+.header_img {
+  background-image: url("../images/hand-fon.png"), url("../images/header-pic.jpg");
+  background-repeat: no-repeat, no-repeat;
+  -webkit-background-size: 439px 507px, cover;
+          background-size: 439px 507px, cover;
+  background-position: 80% bottom, center center;
+  min-height: 600px; }
+
+.header_block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 600px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.header_block_title {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  width: 60%; }
+
+.header_block_title h1 {
+  /*  // font-size: $size; */
+  font-size: 4.5rem;
+  text-shadow: 2px 3px 0px rgba(0, 1, 1, 0.25); }
+
+.header_block_title h2 {
+  text-shadow: 2px 3px 0px rgba(0, 1, 1, 0.25);
+  /*  // font-size: $size; */
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: 30px; }
+
+.cosial_links {
+  padding: 0;
+  margin: 0; }
+
+.cosial_links ul li {
+  display: inline-block;
+  margin-right: 14px; }
+
+.cosial_links ul li a {
+  display: inline-block;
+  opacity: 0.5;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #000000;
+  color: #fff;
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
+
+.cosial_links ul li a:hover {
+  opacity: 1.0; }
+
+/* .header_img:before {
+	position: absolute;
+	content: '';
+background-color:rgba(#000, 0.500);
+left: 0;
+top:0;
+bottom: 0;
+right:0;
+width: 100%;
+height: 100%;
+} */
+/* // задать все переменные
+ */
+/* // как использовать */
+/* p {
+  @include trans;
+ } */
+/* // как использовать */
+/* p {
+  @include font-size(20px);
+ } */
+/*
+как перевести размеры контейнеров из пикселей
+в rem */
+/* .divigin {
+  width: pxrem(30px);
+} */
+/* как использовать
+.nameclass {
+ @include triangle(25px, up, red);
+  @include triangle(25px, down, red);
+   @include triangle(100px, left, red);
+    @include triangle(100px, right, red);
+}
+ */
+/* как использовать
+.nameclass {
+ @include trianglelong(25px,40px, up, red);
+ @include trianglelong(25px,40px, down, red);
+ @include trianglelong(25px,40px, left, red);
+ @include trianglelong(25px,40px, right, red);
+
+}
+ */
+/* как создать треугольник легкий способ */
+/* как использовать
+.nameclass {
+ @include trianglelight(25px, 25px, up, 50px, 50px, #0489B1);
+@include trianglelight(25px, 25px, dawn, 50px, 50px, #0489B1);
+@include trianglelight(25px, 25px, left, 50px, 50px, #0489B1);
+@include trianglelight(25px, 25px, right, 50px, 50px, #0489B1);
+
+ */
+/* как использовать
+.nameclass {
+ @include triangle_in_corner(25px, topleft, red);
+    @include triangle_in_corner(100px, topright, red);
+
+ @include triangle_in_corner(25px, bottomleft, red);
+  @include triangle_in_corner(25px, bottomright, red);
+
+}
+ */
+/*все переменные и моды */
+/*  width: $block_width - ( 5px * 2 ) - ( 1px * 2 ); */
+/* как сделать миксинг */
+/*  @mixin large-text {
+   font: {
+     family: Arial;
+     size: 20px;
+    weight: bold;
+   }
+  color: #ff0000;
+ } */
+/* как использовать миксинг */
+/*  .page-title {
+  @include large-text;
+  padding: 4px;
+  margin-top: 10px;
+ } */
+/* оформление содержимого над самой нартикой ниже top line */
+.block {
+  padding: 50px 0 50px 0; }
+
+.block h2 {
+  font-family: "MyriadProSemiBold",sans-sarif;
+  text-align: center;
+  color: #222222;
+  /*  // font-size: $size; */
+  font-size: 1.875rem; }
+
+.block_descr {
+  color: #848484;
+  text-align: center;
+  /*  // font-size: $size; */
+  font-size: 1rem;
+  margin: 35px 9% 50px 9%; }
+
+.features_box {
+  padding: 0;
+  margin: 0; }
+
+.features_box_items {
+  float: left;
+  width: 33.333%;
+  /* 	height: 33.333%; */
+  border-left: 1px solid #e5e5e5;
+  padding: 60px 0; }
+
+.features_box_items:nth-child(1),
+.features_box_items:nth-child(4) {
+  border-left: 0; }
+
+.features_box_items:nth-child(1),
+.features_box_items:nth-child(2),
+.features_box_items:nth-child(3) {
+  border-bottom: 1px solid #e5e5e5;
+  position: relative; }
+
+.features_box_items:nth-child(1):before,
+.features_box_items:nth-child(2):before {
+  position: absolute;
+  content: "";
+  width: 75px;
+  height: 30px;
+  right: -36px;
+  bottom: -15px;
+  background-color: #fff;
+  z-index: 2; }
+
+.features_items {
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+
+.icon {
+  background: url(../images/sprite.png) no-repeat;
+  display: inline-block; }
+
+.icon-aim {
+  background-position: 0px -295px;
+  width: 48px;
+  height: 48px; }
+
+.icon-bullet {
+  background-position: 0px 0px;
+  width: 48px;
+  height: 48px; }
+
+.icon-color {
+  background-position: 0px -461px;
+  width: 48px;
+  height: 48px; }
+
+.icon-mans {
+  background-position: 0px -628px;
+  width: 48px;
+  height: 48px; }
+
+.icon-monitor {
+  background-position: 0px -133px;
+  width: 48px;
+  height: 48px; }
+
+.icon-picture {
+  background-position: 0px -796px;
+  width: 48px;
+  height: 48px; }
+
+.icon-tools {
+  background-position: 0px -964px;
+  width: 48px;
+  height: 48px; }
+
+/*   оформление 3-го блока   */
+.block_efon {
+  background-color: #e7e7e7; }
+
+#block_efon_h2 {
+  text-align: left;
+  margin-bottom: 35px; }
+
+.block_efon_text p {
+  color: #848484;
+  /*  // font-size: $size; */
+  font-size: 1rem; }
+
+.block_efon_text ul {
+  margin: 30px 0 0 30px;
+  color: #848484;
+  /*  // font-size: $size; */
+  font-size: 1rem; }
+
+.block_efon_text ul li {
+  position: relative;
+  padding-left: 20px; }
+
+.block_efon_text ul li:before {
+  position: absolute;
+  content: "";
+  background: url(../images/sprite.png) no-repeat;
+  display: inline-block;
+  background-position: 0px 0px;
+  width: 9px;
+  height: 13px;
+  left: 0;
+  top: 6px;
+  /*  // font-size: $size; */
+  font-size: 1.25rem;
+  color: #222222; }
+
+.features_items_title {
+  color: #222222;
+  text-align: center;
+  /*  // font-size: $size; */
+  font-size: 1.5rem;
+  margin-bottom: 30px; }
+
+.features_items_text {
+  color: #848484;
+  text-align: center;
+  /*  // font-size: $size; */
+  font-size: 1rem; }
+
+/* блок с видео проигрывателем    */
+.video-responsive {
+  margin-top: 60px;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden; }
+
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.video-wrape {
+  width: 80%;
+  margin: 0 auto; }
+
+/*  оформление слайдеран отзывов      */
+.item_review {
+  padding: 0 0 20px 0; }
+
+.text-review {
+  /*  // font-size: $size; */
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 35px;
+  color: #848484; }
+
+h2.reviewer-name {
+  font-family: "MyriadProSemiBold", sans-serif;
+  text-align: center;
+  /*  // font-size: $size; */
+  font-size: 1.125rem;
+  margin-bottom: 40px;
+  color: #222222; }
+
+.owl-dots {
+  text-align: center; }
+
+.owl-dots .owl-dot {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  border: 2px solid #3498db;
+  margin: 5px 7px;
+  display: inline-block;
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
+
+.owl-dots .owl-dot.active {
+  background: #3498db; }
+
+/* оформление цен */
+.price_wrap {
+  padding: 0;
+  margin: 0; }
+
+.price_item {
+  float: left;
+  background-color: #fff;
+  width: 24.5%;
+  margin-right: 0.5%;
+  -webkit-transition: all 1.5s ease-out;
+  -o-transition: all 1.5s ease-out;
+  transition: all 1.5s ease-out; }
+
+.price_item:last-child {
+  margin-right: 0; }
+
+.price_title {
+  font-family: "MyriadProSemiBold", sans-serif;
+  /*  // font-size: $size; */
+  font-size: 1.75rem;
+  text-align: center;
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 0; }
+
+.price_number {
+  text-align: center;
+  font-family: "MyriadProSemiBold", sans-serif;
+  /*  // font-size: $size; */
+  font-size: 2.625rem;
+  padding: 15px 0; }
+
+.price_number span {
+  /*  // font-size: $size; */
+  font-size: 2.25rem;
+  font-weight: 400; }
+
+.price_termes {
+  color: #848484;
+  /*  // font-size: $size; */
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 400;
+  padding: 14px 0;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-top: 1px solid #848484;
+  color: #848484; }
+
+.price_title a {
+  font-family: "MyriadProBold", sans-serif;
+  display: inline-block;
+  padding: 10px 28px;
+  color: #fff;
+  margin: 5px 0;
+  background-color: #0d74b9;
+  /*  // font-size: $size; */
+  font-size: 0.9375rem;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
+
+.price_title a:hover {
+  -webkit-transform: scale(1.1, 1.1);
+      -ms-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1); }
+
+.price_item:hover {
+  -webkit-transform: scale(1.14, 1.14);
+      -ms-transform: scale(1.14, 1.14);
+          transform: scale(1.14, 1.14);
+  -webkit-box-shadow: 0px 0px 23px 3px rgba(0, 1, 1, 0.25);
+          box-shadow: 0px 0px 23px 3px rgba(0, 1, 1, 0.25); }
+
+/* футер социальные ссылки */
+.footer_social, .footer_social ul, .foo_link ul {
+  padding: 0;
+  margin: 0; }
+
+.footer_social, .foo_link {
+  display: inline;
+  text-align: center; }
+
+.footer_social ul li, .foo_link ul li {
+  display: inline-block; }
+
+.footer_social ul li {
+  margin-right: 9px; }
+
+.footer_social ul li:last-child {
+  margin-right: 0; }
+
+.footer_social ul li a {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+  /*  // font-size: $size; */
+  font-size: 1rem;
+  text-align: center;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  color: #fff;
+  background-color: #3498db;
+  -webkit-transition: all 1.5s ease-out;
+  -o-transition: all 1.5s ease-out;
+  transition: all 1.5s ease-out; }
+
+.footer_social ul li a:hover {
+  -webkit-transform: scale(1.14, 1.14);
+      -ms-transform: scale(1.14, 1.14);
+          transform: scale(1.14, 1.14); }
+
+.foo_link ul li a {
+  display: block;
+  padding: 10px 15px;
+  text-align: center;
+  color: #848484;
+  -webkit-transition: border-bottom 5.5s ease-out;
+  -o-transition: border-bottom 5.5s ease-out;
+  transition: border-bottom 5.5s ease-out; }
+
+.foo_link ul li a:hover {
+  border-bottom: 1px solid #000; }
+
+/* @import '_vseforms.scss';
+ */
+/* // задать все переменные
+ */
+/* // как использовать */
+/* p {
+  @include trans;
+ } */
+/* // как использовать */
+/* p {
+  @include font-size(20px);
+ } */
+/*
+как перевести размеры контейнеров из пикселей
+в rem */
+/* .divigin {
+  width: pxrem(30px);
+} */
+/* как использовать
+.nameclass {
+ @include triangle(25px, up, red);
+  @include triangle(25px, down, red);
+   @include triangle(100px, left, red);
+    @include triangle(100px, right, red);
+}
+ */
+/* как использовать
+.nameclass {
+ @include trianglelong(25px,40px, up, red);
+ @include trianglelong(25px,40px, down, red);
+ @include trianglelong(25px,40px, left, red);
+ @include trianglelong(25px,40px, right, red);
+
+}
+ */
+/* как создать треугольник легкий способ */
+/* как использовать
+.nameclass {
+ @include trianglelight(25px, 25px, up, 50px, 50px, #0489B1);
+@include trianglelight(25px, 25px, dawn, 50px, 50px, #0489B1);
+@include trianglelight(25px, 25px, left, 50px, 50px, #0489B1);
+@include trianglelight(25px, 25px, right, 50px, 50px, #0489B1);
+
+ */
+/* как использовать
+.nameclass {
+ @include triangle_in_corner(25px, topleft, red);
+    @include triangle_in_corner(100px, topright, red);
+
+ @include triangle_in_corner(25px, bottomleft, red);
+  @include triangle_in_corner(25px, bottomright, red);
+
+}
+ */
+/*все переменные и моды */
+/*  width: $block_width - ( 5px * 2 ) - ( 1px * 2 ); */
+/* как сделать миксинг */
+/*  @mixin large-text {
+   font: {
+     family: Arial;
+     size: 20px;
+    weight: bold;
+   }
+  color: #ff0000;
+ } */
+/* как использовать миксинг */
+/*  .page-title {
+  @include large-text;
+  padding: 4px;
+  margin-top: 10px;
+ } */
+@media only screen and (max-width: 1200px) {
+  .container {
+    width: 1170px; } }
+
+@media only screen and (max-width: 1190px) {
+  .container {
+    width: 1170px; } }
+
+@media screen and (max-width: 1080px) {
+  .container {
+    width: 1060px; } }
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 1004px; }
+  .header_block_title h1 {
+    font-size: 3.5rem; }
+  .header_block_title h2 {
+    font-size: 1.2rem;
+    padding-right: 15%; } }
+
+@media only screen and (max-width: 992px) {
+  .container {
+    width: 970px; } }
+
+@media only screen and (max-width: 800px) {
+  .container {
+    width: 780px; } }
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 750px; }
+  .header_img {
+    -webkit-background-size: 293px 338px, cover;
+            background-size: 293px 338px, cover;
+    background-position: 92% bottom, center center; }
+  .features_box_items {
+    float: left;
+    width: 49%;
+    margin: 0; }
+  .features_box_items:nth-child(3),
+  .features_box_items:nth-child(5) {
+    border-left: 0; }
+  .features_box_items:nth-child(4) {
+    border-left: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5; }
+  .features_items_text {
+    padding: 0 10px; }
+  .text-review {
+    font-size: 1rem; }
+  .price_item {
+    width: 49.5%;
+    margin-right: 1.0%; }
+  .price_item:nth-child(even) {
+    margin-right: 0; }
+  .price_item:nth-child(1) {
+    margin-bottom: 1%; }
+  .features_box_items:nth-child(1):before {
+    right: -40px; }
+  .features_box_items:nth-child(2):before {
+    display: none; }
+  .features_box_items:nth-child(3):before {
+    position: absolute;
+    content: "";
+    width: 75px;
+    height: 30px;
+    right: -36px;
+    bottom: -15px;
+    background-color: #fff;
+    z-index: 2; }
+  /*Disable Animation on Mobile Devices*/
+  .animated {
+    /*CSS transitions*/
+    -o-transition-property: none !important;
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    /*CSS transforms*/
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    /*CSS animations*/
+    -webkit-animation: none !important;
+    animation: none !important; } }
+
+@media only screen and (max-width: 736px) {
+  .container {
+    width: 716px; }
+  .header_block_title {
+    width: 64%; }
+  .block_descr {
+    margin: 35px 1% 50px; } }
+
+@media only screen and (max-width: 667px) {
+  .container {
+    width: 647px; }
+  .header_block_title {
+    width: 70%; } }
+
+@media only screen and (max-width: 640px) {
+  .container {
+    width: 620px; }
+  .header_block_title h1 {
+    font-size: 2.7rem; }
+  .header_block_title h2 {
+    font-size: 1.0rem; } }
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 580px; }
+  .header_block_title {
+    width: 64%; } }
+
+@media only screen and (max-width: 568px) {
+  .container {
+    width: 548px; }
+  .header_block_title {
+    width: 70%; }
+  .header_block_title h1 {
+    margin-bottom: 30px; }
+  .features_box_items {
+    float: none;
+    width: 100%;
+    border: 1px solid #e5e5e5;
+    margin-bottom: 1%; }
+  .features_box_items:nth-child(odd) {
+    border-left: 1px solid #e5e5e5; }
+  .features_box_items:last-child {
+    margin-bottom: 0; }
+  .features_box_items::before {
+    display: none; }
+  .price_item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1%; }
+  .price_item:last-child {
+    margin-bottom: 0; } }
+
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 460px; } }
+
+@media only screen and (max-width: 425px) {
+  .container {
+    width: 405px; } }
+
+@media only screen and (max-width: 414px) {
+  .container {
+    width: 394px; }
+  .header_block_title {
+    width: 90%; }
+  .header_block_title h1 {
+    font-size: 2.6rem; } }
+
+@media only screen and (max-width: 384px) {
+  .container {
+    width: 364px; }
+  .header_block_title h1 {
+    font-size: 2.4rem; }
+  .header_img {
+    -webkit-background-size: 196px 226px, cover;
+            background-size: 196px 226px, cover; }
+  .header_block_title h2 {
+    padding-right: 0; }
+  .footer_social ul li {
+    margin-right: 5px; } }
+
+@media only screen and (max-width: 375px) {
+  .container {
+    width: 355px; }
+  .header_block_title h1 {
+    font-size: 2.35rem; }
+  .footer_social ul li {
+    margin-right: 31px;
+    margin-bottom: 18px; }
+  .footer_social ul li:nth-child(1) {
+    margin-left: 30px; } }
+
+@media only screen and (max-width: 360px) {
+  .container {
+    width: 340px; } }
+
+@media only screen and (max-width: 320px) {
+  .container {
+    width: 310px; }
+  .header_block_title h1 {
+    font-size: 2.0rem; }
+  .header_block_title h2 {
+    font-size: 0.90rem; }
+  .block h2 {
+    font-size: 1.75rem; }
+  .block h2 {
+    font-size: 1.4rem; } }
+
+/*# sourceMappingURL=main.min.css.map */

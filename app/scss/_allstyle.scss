@@ -1,0 +1,328 @@
+@import '_var.scss';
+
+/* оформление содержимого над самой нартикой ниже top line */
+.block {
+	padding: 50px 0 50px 0;
+}
+.block h2 {
+		font-family: "MyriadProSemiBold",sans-sarif;
+text-align: center;
+color:$zagolov_color;
+ @include font-size(30px);
+}
+.block_descr {
+color: $descr_color;
+text-align: center;
+ @include font-size(16px);
+ margin: 35px 9% 50px 9%;
+}
+.features_box {
+	padding: 0;
+	margin: 0;
+}
+.features_box_items {
+	float: left;
+	width: 33.333%;
+/* 	height: 33.333%; */
+	border-left: 1px solid #e5e5e5;
+	padding: 60px 0;
+
+}
+.features_box_items:nth-child(1),
+.features_box_items:nth-child(4)  {
+	border-left: 0;
+}
+
+.features_box_items:nth-child(1),
+.features_box_items:nth-child(2),
+.features_box_items:nth-child(3)  {
+border-bottom: 1px solid #e5e5e5;
+position: relative;
+}
+.features_box_items:nth-child(1):before,
+.features_box_items:nth-child(2):before
+{
+position: absolute;
+content: "";
+width: 75px;
+height: 30px;
+    right: -36px;
+    bottom: -15px;
+background-color: #fff;
+z-index: 2;
+}
+
+
+
+.features_items {
+margin: 0;
+padding: 0;
+text-align: center;
+}
+
+.icon {
+	background: url(../images/sprite.png) no-repeat;
+	display: inline-block;
+}
+.icon-aim  {
+background-position: 0px -295px;
+width: 48px ;
+height: 48px;
+
+}
+.icon-bullet  {
+background-position: 0px 0px;
+width: 48px ;
+height: 48px;
+}
+.icon-color  {
+background-position: 0px -461px;
+width: 48px ;
+height: 48px;
+}
+.icon-mans  {
+background-position: 0px -628px;
+width: 48px ;
+height: 48px;
+}
+.icon-monitor  {
+background-position: 0px -133px;
+width: 48px ;
+height: 48px;
+}
+.icon-picture  {
+background-position: 0px -796px;
+width: 48px ;
+height: 48px;
+}
+.icon-tools  {
+background-position: 0px -964px;
+width: 48px ;
+height: 48px;
+}
+
+/*   оформление 3-го блока   */
+
+.block_efon {
+	background-color: #e7e7e7;
+}
+#block_efon_h2 {
+	text-align: left;
+	margin-bottom: 35px;
+}
+.block_efon_text p {
+color: $descr_color;
+  @include font-size(16px);
+}
+.block_efon_text ul {
+	margin: 30px 0 0 30px;
+	color: $descr_color;
+  @include font-size(16px);
+}
+.block_efon_text ul li {
+position: relative;
+padding-left: 20px;
+	}
+	.block_efon_text ul li:before {
+position: absolute;
+content: "";
+	background: url(../images/sprite.png) no-repeat;
+	display: inline-block;
+background-position: 0px 0px;
+width: 9px ;
+height: 13px;
+left: 0;
+top: 6px;
+  @include font-size(20px);
+  color: $zagolov_color;
+	}
+
+
+.features_items_title {
+color: $zagolov_color;
+text-align: center;
+  @include font-size(24px);
+  margin-bottom: 30px;
+}
+.features_items_text {
+	color: $descr_color;
+text-align: center;
+	 @include font-size(16px);
+}
+
+
+
+/* блок с видео проигрывателем    */
+.video-responsive {
+	margin-top: 60px;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow:hidden;
+}
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.video-wrape {
+	width: 80%;
+	margin:0 auto;
+}
+
+/*  оформление слайдеран отзывов      */
+.item_review {
+	padding: 0 0 20px 0;
+}
+.text-review {
+  @include font-size(24px);
+  text-align: center;
+  margin-bottom: 35px;
+  color: $descr_color;
+}
+h2.reviewer-name {
+	font-family: "MyriadProSemiBold", sans-serif;
+	text-align: center;
+	 @include font-size(18px);
+	 margin-bottom: 40px;
+	 color: $zagolov_color;
+}
+.owl-dots {
+text-align: center;
+}
+.owl-dots .owl-dot {
+	cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid $mainfon;
+    margin: 5px 7px;
+    display: inline-block;
+    @include trans;
+}
+
+.owl-dots .owl-dot.active {
+ background: $mainfon;
+}
+/* оформление цен */
+
+.price_wrap {
+padding: 0;
+margin: 0;
+}
+
+.price_item {
+float: left;
+background-color: #fff;
+width: 24.5%;
+margin-right: 0.5%;
+@include transprice;
+}
+.price_item:last-child {
+margin-right: 0;
+}
+
+.price_title {
+font-family: "MyriadProSemiBold", sans-serif;
+ @include font-size(28px);
+ text-align: center;
+ background-color: $mainfon;
+color: #fff;
+padding: 10px 0;
+}
+.price_number {
+	text-align: center;
+font-family: "MyriadProSemiBold", sans-serif;
+ @include font-size(42px);
+ padding: 15px 0;
+}
+.price_number span {
+ @include font-size(36px);
+ font-weight: 400;
+}
+
+.price_termes {
+color: $descr_color;
+@include font-size(16px);
+text-align: center;
+font-weight: 400;
+padding: 14px 0;
+margin-left: 15px;
+margin-right: 15px;
+border-top: 1px solid $descr_color;
+color: $descr_color;
+
+}
+.price_title a {
+	font-family: "MyriadProBold", sans-serif;
+	display: inline-block;
+padding: 10px 28px;
+color: #fff;
+margin: 5px 0;
+background-color: #0d74b9;
+ @include font-size(15px);
+text-transform: uppercase;
+@include trans;
+}
+.price_title a:hover {
+transform: scale(1.1, 1.1);
+	}
+.price_item:hover {
+transform: scale(1.14, 1.14);
+box-shadow: 0px 0px 23px 3px rgba(0, 1, 1, 0.25);
+
+}
+
+
+/* футер социальные ссылки */
+
+.footer_social, .footer_social ul, .foo_link ul {
+padding: 0;
+margin: 0;
+}
+.footer_social, .foo_link {
+display: inline;
+text-align: center;
+
+}
+.footer_social ul li, .foo_link ul li {
+display: inline-block;
+}
+.footer_social ul li {
+ margin-right: 9px;
+ }
+ .footer_social ul li:last-child   {
+ margin-right: 0;
+ }
+.footer_social ul li a {
+display: block;
+width: 3rem;
+height: 3rem;
+line-height: 3rem;
+@include font-size(16px);
+text-align: center;
+border-radius: 50%;
+color: #fff;
+background-color: $mainfon;
+
+	@include transprice;
+}
+.footer_social ul li a:hover {
+transform: scale(1.14, 1.14);
+}
+
+.foo_link ul li a {
+display: block;
+padding: 10px 15px;
+text-align: center;
+color: $descr_color;
+@include link;
+}
+.foo_link ul li a:hover {
+border-bottom: 1px solid #000;
+}
+

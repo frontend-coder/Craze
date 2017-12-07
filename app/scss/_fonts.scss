@@ -1,0 +1,35 @@
+@import '_var.scss';
+/* font-family: "Pacifico"; */
+@font-face {
+	font-family: "Pacifico";
+	src: url("../fonts/Pacifico/Pacifico.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/Pacifico/Pacifico.woff") format("woff"),
+	url("../fonts/Pacifico/Pacifico.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "MyriadProRegular";
+	src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+	url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "MyriadProSemiBold";
+	src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/MyriadProSemiBold/MyriadProSemiBold.woff") format("woff"),
+	url("../fonts/MyriadProSemiBold/MyriadProSemiBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "MyriadProBold";
+	src: url("../fonts/MyriadProBold/MyriadProBold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/MyriadProBold/MyriadProBold.woff") format("woff"),
+	url("../fonts/MyriadProBold/MyriadProBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
